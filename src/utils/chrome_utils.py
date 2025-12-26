@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager  # Import webdriver_manager
 import urllib
-from src.logging import logger
+from src.logger_utils import logger
 
 def chrome_browser_options():
     logger.debug("Setting Chrome browser options")

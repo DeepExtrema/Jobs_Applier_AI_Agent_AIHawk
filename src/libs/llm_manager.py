@@ -17,7 +17,7 @@ from langchain_core.prompt_values import StringPromptValue
 from langchain_core.prompts import ChatPromptTemplate
 from Levenshtein import distance
 
-import ai_hawk.llm.prompts as prompts
+import src.libs.prompts as prompts
 from config import JOB_SUITABILITY_SCORE
 from src.utils.constants import (
     AVAILABILITY,
@@ -71,7 +71,7 @@ from src.utils.constants import (
     WORK_PREFERENCES,
 )
 from src.job import Job
-from src.logging import logger
+from src.logger_utils import logger
 import config as cfg
 
 load_dotenv()

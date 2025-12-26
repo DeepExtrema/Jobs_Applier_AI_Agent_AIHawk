@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from src.logging import logger
+from src.logger_utils import logger
 
 @dataclass
 class Job:
@@ -33,3 +33,6 @@ class Job:
         formatted_information = job_information.strip()
         logger.debug(f"Formatted job information: {formatted_information}")
         return formatted_information
+
+    def set_summarize_job_description(self, summarize_job_description):
+        self.summarize_job_description = summarize_job_description

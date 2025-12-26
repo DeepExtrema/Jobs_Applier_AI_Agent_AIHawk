@@ -15,7 +15,7 @@ import re
 from src.libs.resume_and_cover_builder import ResumeFacade, ResumeGenerator, StyleManager
 from src.resume_schemas.job_application_profile import JobApplicationProfile
 from src.resume_schemas.resume import Resume
-from src.logging import logger
+from src.logger_utils import logger
 from src.utils.chrome_utils import init_browser
 from src.utils.constants import (
     PLAIN_TEXT_RESUME_YAML,
